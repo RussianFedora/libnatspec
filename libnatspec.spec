@@ -3,10 +3,10 @@ Name:		libnatspec
 Version:	0.2.6
 Release:	1%{?dist}
 
-License:	LGPL
+License:	LGPLv2
 Group:		Development/Libraries
 Url:		http://sourceforge.net/projects/natspec
-Source:		http://prdownloads.sf.net/%{name}/%{name}-%{version}.tar.bz2
+Source:		https://downloads.sourceforge.net/project/natspec/natspec/%{version}/%{name}-%{version}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:	popt-devel
