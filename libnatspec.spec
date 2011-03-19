@@ -1,7 +1,7 @@
 Summary:	Library for national and language-specific issues
 Name:		libnatspec
 Version:	0.2.6
-Release:	1%{?dist}
+Release:	2%{?dist}
 
 License:	LGPLv2
 Group:		Development/Libraries
@@ -71,5 +71,8 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sat Mar 19 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 0.2.6-2
+- rebuilt
+
 * Sat Feb  6 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 0.2.6-1
 - initial build for Fedora
