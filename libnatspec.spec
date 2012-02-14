@@ -1,13 +1,12 @@
 Summary:	Library for national and language-specific issues
 Name:		libnatspec
 Version:	0.2.6
-Release:	2%{?dist}
+Release:	3%{?dist}.R
 
 License:	LGPLv2
 Group:		Development/Libraries
 Url:		http://sourceforge.net/projects/natspec
 Source:		https://downloads.sourceforge.net/project/natspec/natspec/%{version}/%{name}-%{version}.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:	popt-devel
 BuildRequires:	autoconf, automake, libtool
@@ -44,13 +43,8 @@ make %{?_smp_mflags}
 
 
 %install
-rm -rf %{buildroot}
 %makeinstall
 rm -f %{buildroot}%{_libdir}/*.la
-
-
-%clean
-rm -rf %{buildroot}
 
 
 %files
@@ -71,6 +65,10 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Feb 14 2012 Ivan Romanov <drizt@land.ru> - 0.2.6-3.R
+- corrected release
+- cleaned spec
+
 * Sat Mar 19 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 0.2.6-2
 - rebuilt
 
